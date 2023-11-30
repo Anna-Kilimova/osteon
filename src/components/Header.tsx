@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './header.scss'
 
 export const Header = () => {
 
-  return <nav>
+  return <div className='header col2'> <nav className='header__nav col8'>
     <ul>
       <li>
         <Link to='/'>Home</Link>
@@ -16,4 +17,6 @@ export const Header = () => {
       </li>
     </ul>
   </nav>
+
+  </div>
 }
