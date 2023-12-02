@@ -1,0 +1,27 @@
+//screen size
+$screen-lg: 1400px;
+$screen-md: 1024px - 1px;
+$screen-sm: 768px;
+$screen-xs: 480px;
+
+//control points map
+$breakpoints: (
+  'lg': (max-width: $screen-lg),
+  'md': (max-width: $screen-md),
+  'sm': (max-width: $screen-sm),
+  'xs': (max-width: $screen-xs)
+);
+
+$column-count: 12;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @error '`#{$breakpoint}` не корректный!';
+  }
+}
