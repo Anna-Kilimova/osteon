@@ -15,6 +15,13 @@
   flex-direction: row;
 }
 
+.footer__link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #232050;
+}
+
 .info__logo {
   margin-bottom: 32px;
 }
@@ -112,6 +119,15 @@
   padding: 19px 54px 19px 74px;
   border-radius: 30px;
   box-shadow: 5px 5px 10px 0px #8482DB33;
+  &:hover {
+    color: #FFFFFF;
+    background-color: #7D7DFF;
+    box-shadow: 5px 5px 10px 0px #8482DB33;
+  }
+  &:active {
+    background-color: #8482DB;
+    color: #FFFFFF;
+  }
 }
 .info_md, .footer__sm {
   display: none;

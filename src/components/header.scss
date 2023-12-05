@@ -63,6 +63,12 @@
     color: white;
     background-color: #BBBBFF;
   }
+  &:active {
+    color: #645CD9;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 10px 0px #8482DB33;
+
+  }
 }
 
 .conteiner__contacts {

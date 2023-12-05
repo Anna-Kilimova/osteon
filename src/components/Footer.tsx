@@ -2,6 +2,7 @@ import React from 'react'
 //import { Link } from 'react-router-dom'
 import './footer.scss'
 import logo from '../icons/desktop/logo-2 1.svg'
+import {Link} from 'react-router-dom';
 
 export const Footer = () => {
 
@@ -38,14 +39,29 @@ export const Footer = () => {
           </div>
           <div className='disearse__list'>
             <ul>
-              <li className={'info__li'}>Головные боли</li>
-              <li className={'info__li'}>Боли в мышцах</li>
-              <li className={'info__li'}>Внутренние органы</li>
-              <li className={'info__li'}>После травм/операций</li>
-              <li className={'info__li'}>ВНЧС</li>
-              <li className={'info__li'}>Боли в позвоночнике</li>
-              <li className={'info__li'}>Нарушение осанки</li>
-              <li className={'info__li'}>Отеки</li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='headAche'>Головные боли</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='musclePain'>Боли в мышцах</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='internalOrgans'>Внутренние органы</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='afterInjuries'>После травм/операций</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='jaw'>ВНЧС</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='vertebraPain'>Боли в позвоночнике</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='postureDisorder'>Нарушение осанки</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='swelling'>Отеки</Link></li>
             </ul>
           </div>
         </div>
@@ -55,11 +71,21 @@ export const Footer = () => {
           </div>
           <div className='servises__list'>
             <ul>
-              <li className={'info__li'}>Остеопатия</li>
-              <li className={'info__li'}>Прикладная кинезиология</li>
-              <li className={'info__li'}>Мануальная терапия</li>
-              <li className={'info__li'}>Кинезиотейпирование</li>
-              <li className={'info__li'}>Массаж</li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/osteopatia'>Остеопатия</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='appKinesiology'>Прикладная кинезиология</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='manualTerapy'>Мануальная терапия</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='kinesioTape'>Кинезиотейпирование</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='massage'>Массаж</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,11 +95,21 @@ export const Footer = () => {
           </div>
           <div className='forPacients__list'>
             <ul>
-              <li className={'info__li'}>О студии</li>
-              <li className={'info__li'}>Специалисты</li>
-              <li className={'info__li'}>Блог</li>
-              <li className={'info__li'}>Цены</li>
-              <li className={'info__li'}>Акции</li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/'>О студии</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/specialists'>Специалисты</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/blog'>Блог</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/prices'>Цены</Link>
+              </li>
+              <li className={'info__li'}>
+                <Link className={'footer__link'} to='/shares'>Акции</Link>
+              </li>
             </ul>
           </div>
         </div>
