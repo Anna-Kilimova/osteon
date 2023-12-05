@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.scss'
 import logo from '../icons/desktop/frame.svg'
-//import menu from '../icons/desktop/eva_menu-outline.svg'
+
 
 
 export const Header = () => {
