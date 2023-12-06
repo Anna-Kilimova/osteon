@@ -1,20 +1,13 @@
 @import "../scss/variables";
 
-* {
-  font-family: 'Inter', sans-serif;;
-}
-
 .wrapper__nav {
   background-color: #7D7DFF;
-
 }
 
 .container__nav {
   margin: 0 auto;
   max-width: 1600px;
-  padding-top: 60px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding: 60px 0 30px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,15 +60,12 @@
     color: #645CD9;
     background-color: #FFFFFF;
     box-shadow: 5px 5px 10px 0px #8482DB33;
-
   }
 }
-
 .conteiner__contacts {
   margin: 0 auto;
   max-width: 1600px;
-  padding-top: 15px;
-  padding-bottom: 11px;
+  padding: 15px 0 11px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,8 +80,6 @@
   .contacts_img {
     object-fit: cover;
   }
-
-
 .contacts__adress {
   display: flex;
   margin-right: 50px;
@@ -105,16 +93,14 @@
 .adress_img {
   min-height: 25px;
   min-width: 24px;
-  background: url("../icons/desktop/location_outline.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/location_outline.svg") no-repeat;
   margin-right: 10px;
 }
 
 .clock_img {
   min-height: 25px;
   min-width: 24px;
-  background: url("../icons/desktop/clock.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/clock.svg") no-repeat;
   margin-right: 10px;
 }
 
@@ -124,30 +110,26 @@
 
 .social__webs {
   display: flex;
+  justify-content: space-between;
   min-height: 25px;
   min-width: 24px;
-  margin-right: 10px;
   padding-top: 7px;
 }
 
 .viber_div {
-  background: url("../icons/desktop/fontisto_viber.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/fontisto_viber.svg") no-repeat;
 }
 
 .teleg_div {
-  background: url("../icons/desktop/fa_brands_telegram.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/fa_brands_telegram.svg") no-repeat;
 }
 
 .inst_div {
-  background: url("../icons/desktop/instagram .svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/instagram .svg") no-repeat;
 }
 
 .fb_div {
-  background: url("../icons/desktop/vector.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/vector.svg") no-repeat;
 }
 
 .socisal__phone {
@@ -157,22 +139,16 @@
 .phone_div {
   min-height: 25px;
   min-width: 24px;
-  background: url("../icons/desktop/phone_outline.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/phone_outline.svg") no-repeat;
   padding-right: 7px;
 }
 
 .social__lang {
   margin-left: 90px;
   display: flex;
-
   & > a {
     font-size: 15px;
     color: #645CD9;
-  }
-
-  & > a:active {
-    color: black;
   }
 }
 
@@ -219,11 +195,8 @@
   .phone_div_md {
     min-height: 25px;
     min-width: 24px;
-    background: url("../icons/desktop/phone_white.svg");
-    background-repeat: no-repeat;
+    background: url("../icons/desktop/phone_white.svg") no-repeat;
     padding-right: 7px;
-  }
-  .container__but_md {
   }
   .contacts__adressClock_md {
     display: block;

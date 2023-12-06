@@ -1,12 +1,8 @@
 @import "../scss/variables";
 
-* {
-  font-family: 'Inter', sans-serif;;
-}
 .wrapper__footer {
   background-color: #F7F7FF;
-  padding: 70px 0;
-  padding-left: 24px;
+  padding: 70px 0 0 24px;
  }
 .container__footer {
   max-width: 1600px;
@@ -14,14 +10,12 @@
   display: flex;
   flex-direction: row;
 }
-
 .footer__link {
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
   color: #232050;
 }
-
 .info__logo {
   margin-bottom: 32px;
 }
@@ -32,37 +26,31 @@
   font-weight: 400;
   line-height: 20px;
 }
-
 .info__social_webs {
   display: flex;
-  padding-right: 25px;
-}
+ }
 .info__webs {
   display: flex;
   min-height: 25px;
   min-width: 24px;
   margin-right: 10px;
-  padding-top: 7px;
+  padding: 7px 40px 0 0;
 }
 
 .info__viber_div {
-  background: url("../icons/desktop/fontisto_viber.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/fontisto_viber.svg") no-repeat;
 }
 
 .info__teleg_div {
-  background: url("../icons/desktop/fa_brands_telegram.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/fa_brands_telegram.svg") no-repeat;
 }
 
 .info__inst_div {
-  background: url("../icons/desktop/instagram .svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/instagram .svg") no-repeat;
 }
 
 .info__fb_div {
-  background: url("../icons/desktop/vector.svg");
-  background-repeat: no-repeat;
+  background: url("../icons/desktop/vector.svg") no-repeat;
 }
 
 .info__p{
@@ -106,7 +94,6 @@
 .contacts__mail_img {
   background-image: url("../icons/desktop/mail 1.svg");
 }
-
 .contacts__but {
   margin-top: 50px;
 }
@@ -171,8 +158,6 @@
     content: url("../icons/desktop/caret_down 2.svg");
     position: absolute;
   }
-
-
   .info__social_sm {
     margin-bottom: 20px;
   }
