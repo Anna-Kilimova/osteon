@@ -67,43 +67,51 @@ export const Header = () => {
             <div>без выходных</div>
           </div>
         </div>
-        <div className='contacts__adressClock_md col4-md'>
-          <div className={'adressClock_md_div'}>
-            <div className={'adress_img'}></div>
-            <p>г. Киев,ул. Л. Руденко, 6а</p>
-          </div>
-          <div className={'adressClock_md_div'}>
-            <div className='clock_img'></div>
-            <p>8:00 - 20:00, без выходных</p>
-          </div>
-        </div>
-        <div className='col2 col4-md contacts__social contacts__social_md'>
-          <div className={'contacts__social_md_div'}>
-            <p>Мы в социальных сетях:</p>
-          </div>
-          <div className={'social__webs'} >
-            <a href=''>
-              <div className={'social__webs viber_div'}></div>
-            </a>
-            <a href=''>
-              <div className={'social__webs teleg_div'}></div>
-            </a>
-            <a href=''>
-              <div className={'social__webs inst_div'}></div>
-            </a>
-            <a href=''>
-              <div className={'social__webs fb_div'}></div>
-            </a>
+        <div className='col4-md'>
+          <div className='contacts__adressClock_md'>
+            <div className={'adressClock_md_div'}>
+              <div className={'adress_img'}></div>
+              <p>г. Киев,ул. Л. Руденко, 6а</p>
+            </div>
+            <div className={'adressClock_md_div'}>
+              <div className='clock_img'></div>
+              <p>8:00 - 20:00, без выходных</p>
+            </div>
           </div>
         </div>
-        <div className='col2 socisal__phone'>
-          <div className='phone_div'></div>
-          <p>+380983442088</p>
+        <div className='col2 col4-md'>
+          <div className='contacts__social contacts__social_md'>
+            <div className={'contacts__social_md_div'}>
+              <p>Мы в социальных сетях:</p>
+            </div>
+            <div className={'social__webs'} >
+              <a href=''>
+                <div className={'social__webs viber_div'}></div>
+              </a>
+              <a href=''>
+                <div className={'social__webs teleg_div'}></div>
+              </a>
+              <a className={'social_inst'} href=''>
+                <div className={'social__webs inst_div'}></div>
+              </a>
+              <a href=''>
+                <div className={'social__webs fb_div'}></div>
+              </a>
+            </div>
+          </div>
         </div>
-        <div className='col2 col6-sm social__lang'>
-          <a href='#'>RU</a>
-          <div className={'social__lang_div'}></div>
-          <a href='#'>UA</a>
+        <div className='col2'>
+          <div className='socisal__phone'>
+            <div className='phone_div'></div>
+            <p>+380983442088</p>
+          </div>
+        </div>
+        <div className='col2 col6-sm'>
+          <div className='social__lang'>
+            <a href='#'>RU</a>
+            <div className={'social__lang_div'}></div>
+            <a href='#'>UA</a>
+          </div>
         </div>
       </div>
     </div>

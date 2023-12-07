@@ -9,8 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: 'Inter', sans-serif;
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 
