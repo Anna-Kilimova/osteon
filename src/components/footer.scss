@@ -1,0 +1,173 @@
+@import "../scss/variables";
+
+.wrapper__footer {
+  background-color: #F7F7FF;
+  padding: 70px 0 0 24px;
+  margin-top: auto;
+ }
+.container__footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.footer__link {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #232050;
+}
+.info__logo {
+  margin-bottom: 32px;
+}
+.info__text>p {
+  margin-bottom: 50px;
+  color: #232050;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.info__social_webs {
+  display: flex;
+ }
+
+.info__webs {
+  display: flex;
+  min-height: 25px;
+  min-width: 24px;
+  margin-right: 10px;
+  padding: 7px 40px 0 0;
+  background:  no-repeat;
+}
+
+.info__viber_div {
+  background: url("../icons/desktop/fontisto_viber.svg") no-repeat;
+}
+
+.info__teleg_div {
+  background: url("../icons/desktop/fa_brands_telegram.svg") no-repeat;
+}
+
+.info__inst_div {
+  background: url("../icons/desktop/instagram .svg") no-repeat;
+}
+
+.info__fb_div {
+  background: url("../icons/desktop/vector.svg") no-repeat;
+}
+
+.info__p{
+  color: #645CD9;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.info__li {
+  color: #232050;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__div {
+  display: flex;
+  flex-direction: row;
+}
+.contacts__img {
+  min-height: 25px;
+  min-width: 24px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.contacts__phone_img {
+  background-image: url("../icons/desktop/phone_outline.svg ");
+}
+.contacts__adress_img {
+  background-image: url("../icons/desktop/location_outline.svg");
+}
+.contacts__clock_img {
+  background-image: url("../icons/desktop/clock.svg");
+}
+.contacts__mail_img {
+  background-image: url("../icons/desktop/mail 1.svg");
+}
+.contacts__but {
+  margin-top: 50px;
+}
+.contacts__but_but {
+  color: white;
+  background-color: #645CD9;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 19px 54px 19px 74px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px 0px #8482DB33;
+  &:hover {
+    color: #FFFFFF;
+    background-color: #7D7DFF;
+    box-shadow: 5px 5px 10px 0px #8482DB33;
+  }
+  &:active {
+    background-color: #8482DB;
+    color: #FFFFFF;
+  }
+}
+.info_md, .footer__sm {
+  display: none;
+}
+
+@include respond-to('md') {
+  .container__footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .info_md {
+  display: block;
+}
+  .info, .footer__sm {
+    display: none;
+  }
+}
+
+@include respond-to('sm') {
+  .container__fotter_sm {
+   margin: 0 auto;
+  }
+  .footer__sm, .info_sm {
+    display: block;
+  }
+  .info_logo_sm {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  .info_sm_p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #232050;
+    position: relative;
+  }
+  .info__p_sm:after {
+    content: url("../icons/desktop/caret_down 2.svg");
+    position: absolute;
+  }
+  .info__social_sm {
+    margin-bottom: 20px;
+  }
+  .contacts__but {
+    margin: 20px 0;
+  }
+  .container__footer {
+    display: none;
+  }
+}
